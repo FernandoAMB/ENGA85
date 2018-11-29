@@ -1,0 +1,23 @@
+module clockCounter(input clock, input reset_n, input read, input write, input[31:0] writedata, output reg [31:0] readdata, output [31:0] extern_count);
+
+	
+	
+	always @ (negedge clock) begin
+		if (!reset_n) begin
+			readdata <= 0;
+		end
+		else begin
+			if (write == 0) begin
+				readdata <= readdata + 1;
+			end
+			else if (write == 1) begin
+				readdata <= 0;
+			end
+		end
+	end
+	
+	assign extern_count = readdata;
+
+	
+
+endmodule

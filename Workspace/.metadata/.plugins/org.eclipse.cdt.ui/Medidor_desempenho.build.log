@@ -1,0 +1,18 @@
+21:27:33 **** Incremental Build of configuration Nios II for project Medidor_desempenho ****
+make all 
+Info: Building ../Medidor_desempenho_bsp/
+C:/Users/ferna/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../Medidor_desempenho_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../Medidor_desempenho_bsp//HAL/inc -I../Medidor_desempenho_bsp/ -I../Medidor_desempenho_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/main.o main.c
+Info: Linking Medidor_desempenho.elf
+nios2-elf-g++  -T'../Medidor_desempenho_bsp//linker.x' -msys-crt0='../Medidor_desempenho_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../Medidor_desempenho_bsp/   -Wl,-Map=Medidor_desempenho.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o Medidor_desempenho.elf obj/default/main.o -lm -msys-lib=m
+nios2-elf-insert Medidor_desempenho.elf --thread_model hal --cpu_name nios2_qsys_0 --qsys true --simulation_enabled false --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name medidor_desempenho --quartus_project_dir "D:/ferna/Projetos/Topicos_IV/Trabalho1" --jdi ../..//output_files/Acumulador.jdi --sopcinfo D:/ferna/Projetos/Topicos_IV/Trabalho1/software/Medidor_desempenho_bsp/../../medidor_desempenho.sopcinfo
+Info: (Medidor_desempenho.elf) 15 KBytes program size (code + initialized data).
+Info:                          11 KBytes free for stack + heap.
+Info: Creating Medidor_desempenho.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source Medidor_desempenho.elf >Medidor_desempenho.objdump
+[Medidor_desempenho build complete]
+
+21:27:36 Build Finished (took 3s.144ms)
+

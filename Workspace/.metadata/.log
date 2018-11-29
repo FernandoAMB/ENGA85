@@ -1,0 +1,13 @@
+!SESSION 2018-11-28 21:00:49.134 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_05
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/users/ferna/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product -pluginCustomization C:/users/ferna/nios2eds/bin/eclipse_nios2/plugin_customization.ini
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-11-28 21:02:48.634
+!MESSAGE Indexed 'Medidor_desempenho_bsp' (79 sources, 58 headers) in 1,36 sec: 1 189 declarations; 2 473 references; 110 unresolved inclusions; 6 syntax errors; 191 unresolved names (5 %)
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-11-28 21:02:51.916
+!MESSAGE Indexed 'Medidor_desempenho' (1 sources, 0 headers) in 0,005 sec: 1 declarations; 1 references; 1 unresolved inclusions; 0 syntax errors; 0 unresolved names (0 %)

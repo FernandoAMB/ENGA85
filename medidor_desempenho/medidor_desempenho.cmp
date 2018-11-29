@@ -1,0 +1,9 @@
+	component medidor_desempenho is
+		port (
+			clk_clk             : in  std_logic                     := 'X'; -- clk
+			clockcount_readdata : out std_logic_vector(31 downto 0);        -- readdata
+			reset_reset_n       : in  std_logic                     := 'X'; -- reset_n
+			sum_readdata        : out std_logic_vector(31 downto 0)         -- readdata
+		);
+	end component medidor_desempenho;
+

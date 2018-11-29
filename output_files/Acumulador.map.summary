@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Nov 28 20:53:36 2018
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Revision Name : Acumulador
+Top-level Entity Name : Acumulador
+Family : Cyclone IV E
+Total logic elements : 1,955
+    Total combinational functions : 1,717
+    Dedicated logic registers : 1,028
+Total registers : 1028
+Total pins : 19
+Total virtual pins : 0
+Total memory bits : 338,944
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

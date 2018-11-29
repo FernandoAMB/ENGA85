@@ -1,0 +1,30 @@
+#define Memory_Base_Address (int *) 0x0000
+#define ACC_Address (int *) 0x3010
+#define ClockCounter_Address (int *) 0x3014
+
+#define resetClockCounter
+int i;
+int *pointer = Memory_Base_Address;
+
+int main()
+{
+	int countACC = 0, countFor = 0;
+	*ClockCounter_Address = 0x00000000;
+	for (i = 0; i < 10; i++)
+	{
+		*ACC_Address = pointer[i];
+	}
+	countACC = *ClockCounter_Address;
+
+	int temp = 0;
+	*ClockCounter_Address = 0x00000000;
+	for (i = 0; i < 10; i++) {
+		temp = temp + pointer[i];
+	}
+	countFor = *ClockCounter_Address;
+
+	*( Memory_Base_Address + 11) = countACC;
+	*( Memory_Base_Address + 15) = countFor;
+
+	return 0;
+}

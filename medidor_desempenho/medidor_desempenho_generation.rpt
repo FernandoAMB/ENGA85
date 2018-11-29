@@ -1,0 +1,115 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate D:\ferna\Projetos\Topicos_IV\Trabalho1\medidor_desempenho.qsys --block-symbol-file --output-directory=D:\ferna\Projetos\Topicos_IV\Trabalho1\medidor_desempenho --family="Cyclone IV E" --part=EP4CE115F29C7
+Progress: Loading Trabalho1/medidor_desempenho.qsys
+Progress: Reading input file
+Progress: Adding Acumulador_0 [Acumulador 1.0]
+Progress: Parameterizing module Acumulador_0
+Progress: Adding Medidor_de_Desempenho_0 [Medidor_de_Desempenho 1.0]
+Progress: Parameterizing module Medidor_de_Desempenho_0
+Progress: Adding clk_0 [clock_source 17.1]
+Progress: Parameterizing module clk_0
+Progress: Adding data_memory [altera_avalon_onchip_memory2 17.1]
+Progress: Parameterizing module data_memory
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 17.1]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding nios2_qsys_0 [altera_nios2_gen2 17.1]
+Progress: Parameterizing module nios2_qsys_0
+Progress: Adding program_memory [altera_avalon_onchip_memory2 17.1]
+Progress: Parameterizing module program_memory
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: medidor_desempenho.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate D:\ferna\Projetos\Topicos_IV\Trabalho1\medidor_desempenho.qsys --synthesis=VERILOG --output-directory=D:\ferna\Projetos\Topicos_IV\Trabalho1\medidor_desempenho\synthesis --family="Cyclone IV E" --part=EP4CE115F29C7
+Progress: Loading Trabalho1/medidor_desempenho.qsys
+Progress: Reading input file
+Progress: Adding Acumulador_0 [Acumulador 1.0]
+Progress: Parameterizing module Acumulador_0
+Progress: Adding Medidor_de_Desempenho_0 [Medidor_de_Desempenho 1.0]
+Progress: Parameterizing module Medidor_de_Desempenho_0
+Progress: Adding clk_0 [clock_source 17.1]
+Progress: Parameterizing module clk_0
+Progress: Adding data_memory [altera_avalon_onchip_memory2 17.1]
+Progress: Parameterizing module data_memory
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 17.1]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding nios2_qsys_0 [altera_nios2_gen2 17.1]
+Progress: Parameterizing module nios2_qsys_0
+Progress: Adding program_memory [altera_avalon_onchip_memory2 17.1]
+Progress: Parameterizing module program_memory
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: medidor_desempenho.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: medidor_desempenho: Generating medidor_desempenho "medidor_desempenho" for QUARTUS_SYNTH
+Info: Acumulador_0: "medidor_desempenho" instantiated Acumulador "Acumulador_0"
+Info: Medidor_de_Desempenho_0: "medidor_desempenho" instantiated Medidor_de_Desempenho "Medidor_de_Desempenho_0"
+Info: data_memory: Starting RTL generation for module 'medidor_desempenho_data_memory'
+Info: data_memory:   Generation command is [exec C:/users/ferna/quartus/bin64/perl/bin/perl.exe -I C:/users/ferna/quartus/bin64/perl/lib -I C:/users/ferna/quartus/sopc_builder/bin/europa -I C:/users/ferna/quartus/sopc_builder/bin/perl_lib -I C:/users/ferna/quartus/sopc_builder/bin -I C:/users/ferna/quartus/../ip/altera/sopc_builder_ip/common -I C:/users/ferna/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/users/ferna/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=medidor_desempenho_data_memory --dir=C:/Users/ferna/AppData/Local/Temp/alt7863_5060522703586292265.dir/0030_data_memory_gen/ --quartus_dir=C:/users/ferna/quartus --verilog --config=C:/Users/ferna/AppData/Local/Temp/alt7863_5060522703586292265.dir/0030_data_memory_gen//medidor_desempenho_data_memory_component_configuration.pl  --do_build_sim=0  ]
+Info: data_memory: Done RTL generation for module 'medidor_desempenho_data_memory'
+Info: data_memory: "medidor_desempenho" instantiated altera_avalon_onchip_memory2 "data_memory"
+Info: jtag_uart_0: Starting RTL generation for module 'medidor_desempenho_jtag_uart_0'
+Info: jtag_uart_0:   Generation command is [exec C:/users/ferna/quartus/bin64/perl/bin/perl.exe -I C:/users/ferna/quartus/bin64/perl/lib -I C:/users/ferna/quartus/sopc_builder/bin/europa -I C:/users/ferna/quartus/sopc_builder/bin/perl_lib -I C:/users/ferna/quartus/sopc_builder/bin -I C:/users/ferna/quartus/../ip/altera/sopc_builder_ip/common -I C:/users/ferna/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/users/ferna/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=medidor_desempenho_jtag_uart_0 --dir=C:/Users/ferna/AppData/Local/Temp/alt7863_5060522703586292265.dir/0031_jtag_uart_0_gen/ --quartus_dir=C:/users/ferna/quartus --verilog --config=C:/Users/ferna/AppData/Local/Temp/alt7863_5060522703586292265.dir/0031_jtag_uart_0_gen//medidor_desempenho_jtag_uart_0_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart_0: Done RTL generation for module 'medidor_desempenho_jtag_uart_0'
+Info: jtag_uart_0: "medidor_desempenho" instantiated altera_avalon_jtag_uart "jtag_uart_0"
+Info: nios2_qsys_0: "medidor_desempenho" instantiated altera_nios2_gen2 "nios2_qsys_0"
+Info: program_memory: Starting RTL generation for module 'medidor_desempenho_program_memory'
+Info: program_memory:   Generation command is [exec C:/users/ferna/quartus/bin64/perl/bin/perl.exe -I C:/users/ferna/quartus/bin64/perl/lib -I C:/users/ferna/quartus/sopc_builder/bin/europa -I C:/users/ferna/quartus/sopc_builder/bin/perl_lib -I C:/users/ferna/quartus/sopc_builder/bin -I C:/users/ferna/quartus/../ip/altera/sopc_builder_ip/common -I C:/users/ferna/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/users/ferna/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=medidor_desempenho_program_memory --dir=C:/Users/ferna/AppData/Local/Temp/alt7863_5060522703586292265.dir/0032_program_memory_gen/ --quartus_dir=C:/users/ferna/quartus --verilog --config=C:/Users/ferna/AppData/Local/Temp/alt7863_5060522703586292265.dir/0032_program_memory_gen//medidor_desempenho_program_memory_component_configuration.pl  --do_build_sim=0  ]
+Info: program_memory: Done RTL generation for module 'medidor_desempenho_program_memory'
+Info: program_memory: "medidor_desempenho" instantiated altera_avalon_onchip_memory2 "program_memory"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_005: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "medidor_desempenho" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: irq_mapper: "medidor_desempenho" instantiated altera_irq_mapper "irq_mapper"
+Info: rst_controller: "medidor_desempenho" instantiated altera_reset_controller "rst_controller"
+Info: cpu: Starting RTL generation for module 'medidor_desempenho_nios2_qsys_0_cpu'
+Info: cpu:   Generation command is [exec C:/Users/ferna/quartus/bin64//eperlcmd.exe -I C:/Users/ferna/quartus/bin64//perl/lib -I C:/users/ferna/quartus/sopc_builder/bin/europa -I C:/users/ferna/quartus/sopc_builder/bin/perl_lib -I C:/users/ferna/quartus/sopc_builder/bin -I C:/users/ferna/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I C:/users/ferna/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I C:/users/ferna/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I C:/users/ferna/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- C:/users/ferna/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=medidor_desempenho_nios2_qsys_0_cpu --dir=C:/Users/ferna/AppData/Local/Temp/alt7863_5060522703586292265.dir/0035_cpu_gen/ --quartus_bindir=C:/Users/ferna/quartus/bin64/ --verilog --config=C:/Users/ferna/AppData/Local/Temp/alt7863_5060522703586292265.dir/0035_cpu_gen//medidor_desempenho_nios2_qsys_0_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2018.11.28 20:49:49 (*) Starting Nios II generation
+Info: cpu: # 2018.11.28 20:49:49 (*)   Checking for plaintext license.
+Info: cpu: # 2018.11.28 20:49:50 (*)   Couldn't query license setup in Quartus directory C:/Users/ferna/quartus/bin64/
+Info: cpu: # 2018.11.28 20:49:50 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: cpu: # 2018.11.28 20:49:50 (*)   LM_LICENSE_FILE environment variable is empty
+Info: cpu: # 2018.11.28 20:49:50 (*)   Plaintext license not found.
+Info: cpu: # 2018.11.28 20:49:50 (*)   No license required to generate encrypted Nios II/e.
+Info: cpu: # 2018.11.28 20:49:50 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2018.11.28 20:49:50 (*)   Creating all objects for CPU
+Info: cpu: # 2018.11.28 20:49:51 (*)   Generating RTL from CPU objects
+Info: cpu: # 2018.11.28 20:49:51 (*)   Creating plain-text RTL
+Info: cpu: # 2018.11.28 20:49:52 (*) Done Nios II generation
+Info: cpu: Done RTL generation for module 'medidor_desempenho_nios2_qsys_0_cpu'
+Info: cpu: "nios2_qsys_0" instantiated altera_nios2_gen2_unit "cpu"
+Info: nios2_qsys_0_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "nios2_qsys_0_data_master_translator"
+Info: jtag_uart_0_avalon_jtag_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "jtag_uart_0_avalon_jtag_slave_translator"
+Info: nios2_qsys_0_data_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "nios2_qsys_0_data_master_agent"
+Info: jtag_uart_0_avalon_jtag_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "jtag_uart_0_avalon_jtag_slave_agent"
+Info: jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: router_003: "mm_interconnect_0" instantiated altera_merlin_router "router_003"
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_001"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: cmd_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_001"
+Info: Reusing file D:/ferna/Projetos/Topicos_IV/Trabalho1/medidor_desempenho/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_001"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file D:/ferna/Projetos/Topicos_IV/Trabalho1/medidor_desempenho/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_001"
+Info: Reusing file D:/ferna/Projetos/Topicos_IV/Trabalho1/medidor_desempenho/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: medidor_desempenho: Done "medidor_desempenho" with 30 modules, 44 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis
